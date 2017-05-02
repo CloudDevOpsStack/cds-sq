@@ -26,5 +26,6 @@ RUN set -x \
 VOLUME "$SONARQUBE_HOME/data"
 
 WORKDIR $SONARQUBE_HOME
-COPY start-sonar.sh $SONARQUBE_HOME/bin/
+COPY start-sonar.sh $SONARQUBE_HOME/bin/start-sonar.sh
+RUN chmod 755 $SONARQUBE_HOME/bin/start-sonar.sh
 ENTRYPOINT ["./bin/start-sonar.sh"]
