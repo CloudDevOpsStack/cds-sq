@@ -24,4 +24,4 @@ docker create -p <OUT SIDE PORT>:9000 --name <NAME FOR THE CONTAINER> -v <SONARQ
 
 Now start the container
 
-docker start <CONTAINER NAME>
+docker start <CONTAINER_NAME>
