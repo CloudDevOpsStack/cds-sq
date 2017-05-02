@@ -1,6 +1,7 @@
 FROM centos:latest
 MAINTAINER techolution.com
 RUN yum install -y wget git java java-devel
+RUN yum install -y unzip
 
 ENV SONAR_VERSION=6.3.1 \
     SONARQUBE_HOME=/opt/sonarqube \
