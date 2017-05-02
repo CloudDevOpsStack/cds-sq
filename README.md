@@ -12,16 +12,16 @@ cd techo-sq
 
 Run the below command to build the SonarQube on Docker Env as below 
 
-docker build -t <IMAGE NAME> .
+docker build -t <IMAGE_NAME> .
 
 Create the Volume for SonarQube
 
-docker volume create --name <SONARQUBE VOLUME NAME>
+docker volume create --name <SONARQUBE_VOLUME_NAME>
 
 Create the container for Sonarqube by running below command
 
-docker create -p <OUT SIDE PORT>:9000 --name <NAME FOR THE CONTAINER> -v <SONARQUBE VOLUME NAME>:/opt/sonarqube <IMAGE NAME>
+docker create -p <OUT_SIDE_PORT>:9000 --name <NAME_FOR_THE_CONTAINER> -v <SONARQUBE_VOLUME_NAME>:/opt/sonarqube <IMAGE_NAME>
 
-Now start the container
+Now start the container by running below command 
 
 docker start <CONTAINER_NAME>
